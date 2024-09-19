@@ -5,7 +5,7 @@ import { useStateContext } from "../context"; // Adjust the import path
 
 import { menu, search } from "../assets";
 import { navlinks } from "../constants";
-import { IconHeartHandshake } from "@tabler/icons-react";
+import { IconReportMedical } from "@tabler/icons-react";
 import CustomButton from "./CustomButton";
 
 const Navbar = () => {
@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <div className="mb-[35px] flex flex-col-reverse justify-between gap-6 md:flex-row">
-      <div className="flex h-[52px] max-w-[458px] flex-row rounded-[100px] bg-[#1c1c24] py-2 pl-4 pr-2 lg:flex-1">
+      <div className="flex h-[52px] max-w-[458px] flex-row rounded-[100px] bg-[#4b7ad3] py-2 pl-4 pr-2 lg:flex-1">
         <input
           type="text"
           placeholder="Search for records"
@@ -77,7 +77,7 @@ const Navbar = () => {
 
       <div className="relative flex items-center justify-between sm:hidden">
         <div className="flex h-[40px] w-[40px] cursor-pointer items-center justify-center rounded-[10px] bg-[#2c2f32]">
-          <IconHeartHandshake size={40} color="#1ec070" className="p-2" />
+          <IconReportMedical stroke={2} size={40} color="#1ec070" className="p-2" />
         </div>
         <img
           src={menu}
